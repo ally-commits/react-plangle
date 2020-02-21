@@ -1,0 +1,118 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.loading-container {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  background: #000;
+}
+.loading-box {
+  width: 180px;
+  height: 50px;
+  position: relative;
+}
+.loading-img {
+  width: 100%;
+  height: 100%;
+}
+.loading-span {
+  width: 108px;
+  position: absolute;
+  bottom: 7px;
+  background: white;
+  left: 13px;
+  height: 6px;
+}
+.load {
+  width: 0%;
+  height: 100%;
+  position: absolute;
+  background: black;
+}
+
+@-webkit-keyframes fadeOut {
+  from {
+    opacity: 1;
+    display: flex;
+  }
+
+  to {
+    opacity: 0;
+    display: none !important;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    display: flex;
+  }
+
+  to {
+    opacity: 0;
+    display: none;
+  }
+}
+
+.fadeOut {
+  -webkit-animation-name: fadeOut;
+  animation-name: fadeOut;
+}
+@keyframes none {
+  from {
+    display: flex;
+  }
+
+  to {
+    display: none;
+  }
+}
+
+.none-a {
+  -webkit-animation-name: none;
+  animation-name: none;
+}
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+.animated-load {
+  -webkit-animation-duration: 1.4s;
+  animation-duration: 1.4s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.anime-fade-text {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
